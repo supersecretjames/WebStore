@@ -1,0 +1,5 @@
+<h1>Product Detail</h1>
+<p>
+  <%= @product.inspect %>
+</p>
+<%= link_to("Add item to cart", product_add_to_cart_url(@product), :method => :put) %>

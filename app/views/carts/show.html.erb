@@ -1,0 +1,8 @@
+<h1>Cart</h1>
+<p>
+  <ul>
+    <% @product_ids.each do |product_id| %>
+    <li><%= Product.find(product_id.to_i).inspect %></li>
+    <% end %>
+  </ul>
+</p>
